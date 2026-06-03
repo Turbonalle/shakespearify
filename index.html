@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespearify - AWS Serverless</title>
+    <!-- Modern and elegant Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1 class="title">Shakespearify</h1>
+            <p class="subtitle">Translate thy words into the tongue of the Bard.</p>
+        </header>
+
+        <section class="translation-box">
+            <div class="input-group">
+                <label for="userInput">Thy Text:</label>
+                <textarea id="userInput" placeholder="Type what you want to say in plain English here..." rows="4"></textarea>
+            </div>
+
+            <button id="translateBtn" class="translate-btn">
+                <span class="btn-text">Translate</span>
+                <div class="loader hidden" id="btnLoader"></div>
+            </button>
+
+            <div class="output-group hidden" id="outputGroup">
+                <label>The Bard sayeth:</label>
+                <div id="outputContainer" class="output-container">
+                    <p id="responseText"></p>
+                </div>
+            </div>
+            
+            <div id="errorBox" class="error-box hidden"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
