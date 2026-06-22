@@ -10,7 +10,8 @@ This project was built from scratch on **Amazon Web Services (AWS)** using a ser
 
 ### Frontend
 * **Tech:** Vanilla HTML, CSS, JavaScript
-* **Hosting:** Amazon S3 (Static Website Hosting)
+* **Hosting:** Amazon S3 (Origin Storage)
+* **CDN & Security:** Amazon CloudFront (Global edge caching, HTTPS SSL enforcement)
 * **Design:** Custom premium glassmorphism UI with responsive design.
 
 ### Backend (Serverless)
