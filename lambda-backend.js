@@ -62,8 +62,8 @@ export const handler = async (event) => {
 
         const currentUsage = updateResponse.Attributes.usageCount;
 
-        // Check if they have exceeded the 5 requests limit
-        if (currentUsage > 5) {
+        // Check if they have exceeded the request limit
+        if (currentUsage > 3) {
             return {
                 statusCode: 429,
                 headers: corsHeaders,
@@ -73,7 +73,6 @@ export const handler = async (event) => {
     } catch (dbError) {
         console.error("DynamoDB Error:", dbError);
         // If the database fails, we might still want to fail safely or allow the request.
-        // For a portfolio, failing is fine to prove the DB is working.
         return {
             statusCode: 500,
             headers: corsHeaders,

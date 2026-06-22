@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (response.status === 429) {
-                throw new Error("Thou hast exhausted thy daily requests! Come back tomorrow.");
+                throw new Error("Thou hast exhausted thy daily three requests! Come back tomorrow.");
             }
 
             const data = await response.json();
