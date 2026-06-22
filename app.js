@@ -1,6 +1,3 @@
-// REPLACE THIS with the Invoke URL you just copied from API Gateway!
-// IMPORTANT: Make sure it ends with /translate (the route we configured)
-// Example: const API_URL = "https://a1b2c3d4e5.execute-api.us-east-1.amazonaws.com/translate";
 const API_URL = "https://suo5l0ms3b.execute-api.eu-north-1.amazonaws.com/translate";
 
 document.addEventListener('DOMContentLoaded', () => {
