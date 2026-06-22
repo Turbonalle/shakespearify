@@ -3,7 +3,7 @@
 A full-stack, serverless web application that uses Artificial Intelligence to translate modern English into Shakespearean prose.
 
 ## 🚀 Live Demo
-*https://shakespearify-turbonalle-2026.s3.eu-north-1.amazonaws.com/index.html*
+**[https://dpoujjndo6sn5.cloudfront.net/](https://dpoujjndo6sn5.cloudfront.net/)**
 
 ## 🛠️ Architecture & Tech Stack
 This project was built from scratch on **Amazon Web Services (AWS)** using a serverless architecture to ensure high availability, deep security, and seamless scalability.
